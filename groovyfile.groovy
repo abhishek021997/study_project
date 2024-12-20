@@ -1,11 +1,11 @@
-@Library("study_shared") _
+//@Library("study_shared") _
 pipeline {
     agent { label "dev" }
 
   stages{
       stage(var_call){
-          steps{
-            value();
+          scripts{
+            echo "testing"
             
             
           }
