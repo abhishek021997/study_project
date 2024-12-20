@@ -3,12 +3,12 @@ pipeline {
     agent { label "dev" }
 
 enviroment{
-    abhi = "12345"
+    ABHI = "12345"
 }
   stages{
     stage(var_call){
       steps{
-        echo "${env.abhi}"
+        echo "${env.ABHI}"
 
       }
     }
