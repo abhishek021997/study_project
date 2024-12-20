@@ -1,3 +1,3 @@
-def newfile(ad){
-    echo "new data output"
+def test(ad){
+  echo "hi abhi new data"
 }

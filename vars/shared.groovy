@@ -1,5 +1,5 @@
-def newfile(ad){
-    echo "new data output"
+def call(ab){
+  echo "hi abhi"
 }
 
 
