@@ -1,0 +1,12 @@
+- name: jinja file template edit
+  hosts: localhost
+
+  vars:
+      file_name: study.conf
+
+
+  task:
+        - name: template
+          template:
+              src: file.j2
+              dist: 
