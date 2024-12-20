@@ -2,10 +2,6 @@
 pipeline {
     agent { label "dev" }
 
-    environment {
-       FOO = "foo"
-    }
-
     stages{        
       stage('build'){
           steps{
