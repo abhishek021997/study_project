@@ -1,3 +1,3 @@
-def newfile(a){
+def newfile(ad){
     echo "new data output"
 }
