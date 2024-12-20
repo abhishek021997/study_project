@@ -3,7 +3,7 @@ pipeline {
     agent { label "dev" }
 
     stages{        
-      stage('build'){
+      stage('download data'){
         steps{
           echo "Git content download in a machine"
           sh "rm -rf workspace"
