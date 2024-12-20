@@ -6,7 +6,7 @@ pipeline {
       stage(var_call){
           steps{
             value();
-            shared();
+            
             
           }
       }
