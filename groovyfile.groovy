@@ -1,4 +1,4 @@
-@Library("study_shared") _
+//@Library("study_shared") _
 pipeline {
     agent { label "dev" }
 
