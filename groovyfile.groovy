@@ -4,7 +4,7 @@ pipeline {
 
   stages{
       stage(var_call){
-          scripts{
+          script{
             echo "testing"
             
             
