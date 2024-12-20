@@ -1,11 +1,15 @@
-//@Library("study_shared") _
+@Library("study_shared") _
 pipeline {
     agent { label "dev" }
 
+    environment {
+       FOO = "foo"
+    }
+
     stages{        
-      stage("build"){
+      stage('build'){
           steps{
-            sh 'echo "hi this is testing new"'
+            echo "hi this is testing new ${FOO}"
           }
       }
 
