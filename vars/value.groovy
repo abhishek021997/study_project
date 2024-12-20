@@ -1,5 +1,3 @@
-string a = abhi
-
 def newfile(a){
-    println newfile
+    echo "new data output"
 }
