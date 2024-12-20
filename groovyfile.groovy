@@ -2,7 +2,7 @@
 pipeline {
     agent { label "dev" }
 
-    enviroment{
+    environment{
         ABHI = "12345"
     }
     stages{
