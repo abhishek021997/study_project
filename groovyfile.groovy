@@ -2,23 +2,23 @@
 pipeline {
     agent { label "dev" }
 
-enviroment{
-    ABHI = "12345"
-}
-  stages{
-    stage(var_call){
-      steps{
-        echo "${env.ABHI}"
-
-      }
+    enviroment{
+        ABHI = "12345"
     }
-      
-      
-    stage(build){
+    stages{
+      stage(var_call){
         steps{
-          sh 'echo "hi this is testing new"'
+          sh echo "${env.ABHI}"
+
         }
-    }
+      }
+        
+        
+      stage(build){
+          steps{
+            sh 'echo "hi this is testing new"'
+          }
+      }
 
     
   }
