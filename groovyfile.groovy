@@ -2,13 +2,13 @@
 pipeline {
     agent { label "dev" }
 
-vars{
+enviroment{
     abhi = "12345"
 }
   stages{
     stage(var_call){
       steps{
-        echo "${vars.abhi}"
+        echo "${env.abhi}"
 
       }
     }
