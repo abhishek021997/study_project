@@ -26,7 +26,12 @@ def docker_data(a):
 
 
     elif a == 1:
-        b = os.WEXITSTATUS(os.system(f" {doc_img_output} | grep -i Exited"))
+        #def cont_recreate(b,fetch_data):
+            
+
+
+        b = os.WEXITSTATUS(os.system(f" {doc_img_output} | grep -ic Exited"))
+        #cont_recreate(b, fetch_data)
     else:
         print("Container not created")
 
