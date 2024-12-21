@@ -20,13 +20,6 @@ pipeline {
         }
 
       }
-      stage('build'){
-        steps{
-          //docker hub content ready
-
-        }
-
-      }
 
 
 
