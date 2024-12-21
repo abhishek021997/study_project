@@ -15,7 +15,7 @@
         - name: template
           template:
               src: file.j2
-              dist: "{{file_name}}"
+              dest: "{{file_name}}"
 
         - name: container_id
           command: cat < ../tmp_data.txt
