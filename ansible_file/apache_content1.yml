@@ -11,7 +11,7 @@
         - test.byteportfolio.in
 
 
-  task:
+  tasks:
         - name: template
           template:
               src: file.j2
