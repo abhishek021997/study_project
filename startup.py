@@ -9,15 +9,15 @@ data collection and run
 def docker_data(a):
     if a == 0:
         #def image_create(image_check):
-        #    if image_check == 256:
-
+            if image_check == 256:
+                echo "there is no conetent"
+            else:
+                echo "Image already In your machine"
 
         
 
         image_check = os.system("docker images | grep -i study")
-        x = print(image_check)
-        xyz = x.replace("256", "0")
-        print(xyz)
+        image_create(image_check)
         
 
 
