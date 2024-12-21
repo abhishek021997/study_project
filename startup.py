@@ -1,4 +1,5 @@
 import os
+import docker
 
 """
 Created by: Abhishek Sharma
@@ -7,9 +8,7 @@ data collection and run
 """
 def docker_data(a):
     if a == 0:
-        docker_all_img = os.WEXITSTATUS(os.system(f"docker ps -a"))
-
-        print(docker_all_img)
+        os.system("docker images")
     elif a == 1:
         b = os.WEXITSTATUS(os.system(f" {doc_img_output} | grep -i Exited"))
     else:
