@@ -5,7 +5,7 @@ Created by: Abhishek Sharma
 data collection and run
 
 """
-def docker_data(a):
+def docker_data(a, docker_images):
     if a == 0:
         print(docker_images)
     elif a == 1:
@@ -19,6 +19,6 @@ doc_img_output = f"{docker_images}"
 
 a = os.system(f" {doc_img_output} | wc -l")
 
-docker_data(a)
+docker_data(a, docker_images)
 
 #docker_ps = os.system("docker build .")
