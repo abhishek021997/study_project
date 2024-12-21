@@ -36,8 +36,13 @@
               path: "{{file_name}}"
               container_path: /etc/apache2/sites-available/000-default.conf
           
-        - name: container reboot
+        - name: container stop
           community.docker.docker_container:
              name: "{{con_id}}"
-             state: restart
+             state: stopped
+
+        - name: container start
+          community.docker.docker_container:
+             name: "{{con_id}}"
+             state: started
           
