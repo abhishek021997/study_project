@@ -12,7 +12,7 @@ pipeline {
       }
       stage('build'){
         steps{
-          sh "docker images"
+          sh "python3 startup.py"
           
         }
 
