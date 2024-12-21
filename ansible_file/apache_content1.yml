@@ -19,8 +19,8 @@
 
         - name: get container id
           shell: con_id.sh
-          args:
-            executable: /bin/bash
+          #args:
+          #  executable: /bin/bash
 
         - name: container_id
           command: "cat ../tmp_data.txt"
