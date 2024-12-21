@@ -14,7 +14,7 @@ pipeline {
         steps{
   
 
-          sh "python3 startup.py"        
+          sh ""        
         }
 
       }

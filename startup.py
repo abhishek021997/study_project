@@ -5,7 +5,17 @@ Created by: Abhishek Sharma
 data collection and run
 
 """
+#def docker_data(a):
+#    if a == 0:
+#        print(docker_images)
 
-docker_ps = os.system("docker ps")
+docker_images = os.system("docker ps -a | grep -i study")
 
-print(docker_ps)
+doc_img_output = f"{docker_images}"
+
+a = os.system(f" {doc_img_output} | wc -l ")
+#docker_data(a, doc_img_output, docker_images)
+
+#:docker_ps = os.system("docker build .")
+
+print(a)
