@@ -31,5 +31,5 @@ else
         docker rmi study
         
 fi
-
+docker ps | grep -i "study_project" | awk -F" " '{print $1}' | cut -b 1-4 > tmp_data.txt
 
