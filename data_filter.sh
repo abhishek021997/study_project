@@ -9,6 +9,6 @@ docker ps | grep -i "study_project" | awk -F" " '{print $1}' | cut -b 1-4 > tmp_
 
 var1=$(cat tmp_data)
 
-docker rmi study
+docker rm -f "$var1"
 sleep 2
-#docker rm -f "$var1"
+docker rmi study
