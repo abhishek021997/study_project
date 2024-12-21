@@ -6,7 +6,7 @@ volumes:
 ################################################################
 services:
   study:
-    image: study_img
+    build: .
     ports:
       - 30020:80
 

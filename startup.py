@@ -11,9 +11,7 @@ def docker_data(a):
         
         def docker_imge_get(docker_imges):
             if docker_imges == 0:
-                os.system("docker build -t study_img .")
-                #time.sleep(60)
-                #os.system("docker-compose up -d")
+                os.system("docker-compose up -d")
                 
             elif docker_imges == 1:
                 os.system("docker-compose up -d")
