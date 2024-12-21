@@ -8,7 +8,7 @@ data collection and run
 """
 def docker_data(a):
     if a == 0:
-        #def image_create(image_check):
+        def image_create(image_check):
             if image_check == 256:
                 print("there is no conetent")
             else:
