@@ -19,6 +19,6 @@ doc_img_output = f"{docker_images}"
 
 a = os.system(f" {doc_img_output} | wc -l")
 
-docker_data(a, doc_img_output, docker_images, b)
+docker_data(a, doc_img_output, docker_images)
 
 #docker_ps = os.system("docker build .")
