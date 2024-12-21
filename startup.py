@@ -14,8 +14,11 @@ def docker_data(a):
                 os.system("docker-compose up -d")
                 
             elif docker_imges == 1:
-                
+                # shell remove old test container
+                os.system("sh data_filter.sh")
+                time.sleep(0.30)
                 os.system("docker-compose up -d")
+
             else:
 
                 print(f"Image already pull in your machine1{docker_imges}")
@@ -26,12 +29,10 @@ def docker_data(a):
 
 
     elif a == 1:
-        #def cont_recreate(b,fetch_data):
-            
-
-
-        b = os.WEXITSTATUS(os.system(f" {doc_img_output} | grep -ic Exited"))
-        #cont_recreate(b, fetch_data)
+        os.system("sh data_filter.sh")
+        time.sleep(0.30)
+        #os.system("docker-compose up -d")
+      
     else:
         print("Container not created")
 
@@ -42,4 +43,3 @@ doc_img_output = f"{docker_process}"
 a = os.WEXITSTATUS(os.system(f" {doc_img_output} | wc -l"))
 
 docker_data(a)
-#docker_ps = os.system("docker build .")

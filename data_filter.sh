@@ -5,11 +5,10 @@
 # Data filter
 
 
-docker ps | grep -i "study" | awk -F" " '{print $1}' > tmp_data
+docker ps | grep -i "study_project" | awk -F" " '{print $1}' | cut -b 1-4 > tmp_data
 
-if [ `cat tmp_data | wc -l` -eq 0 ];then
-        echo "There is no container found"
-        
-else
+var1=$(cat tmp_data)
 
-fi
+docker rmi study
+sleep 4
+docker rm -f "$var1"
