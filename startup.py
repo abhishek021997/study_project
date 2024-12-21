@@ -10,11 +10,11 @@ def docker_data(a):
     if a == 0:
         
 
-        image_check = os.system("docker images")
+        image_check = os.system("docker images | wc -l")
         print(image_check)
         
 
-        
+
 
 
     elif a != 0:
