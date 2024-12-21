@@ -14,10 +14,8 @@ def docker_data(a):
                 os.system("docker-compose up -d")
                 
             elif docker_imges == 1:
-                # shell remove old test container
-                os.system("sh data_filter.sh")
-                time.sleep(0.30)
-                os.system("docker-compose up -d")
+                print("Image alreay created and runing now")
+                #os.system("docker-compose up -d")
 
             else:
 

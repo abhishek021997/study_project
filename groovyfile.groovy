@@ -12,9 +12,10 @@ pipeline {
       }
       stage('build'){
         steps{
-  
 
+          sh "sh data_filter.sh"
           sh "python3 startup.py"        
+
         }
 
       }
