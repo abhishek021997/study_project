@@ -13,14 +13,14 @@ def docker_data(a):
             if docker_imges == 0:
                 os.system("docker build -t study_img .")
                 time.sleep(60)
-                os.system("docker-compose run .")
+                os.system("docker-compose up -d")
                 
             elif docker_imges == 1:
-                os.system("docker-compose run .")
+                os.system("docker-compose up -d")
             else:
                 print("Image already pull in your machine")
 
-        docker_imges = os.system("docker images | grep -ic ubuntu/apache2")
+        docker_imges = os.system("docker images | grep -ic study_img")
         
         docker_imge_get(docker_imges)
 
