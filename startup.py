@@ -8,10 +8,15 @@ data collection and run
 """
 def docker_data(a):
     if a == 0:
+        #def image_create(image_check):
+        #    if image_check == 256:
+
+
         
 
         image_check = os.system("docker images | grep -i study")
-        print(image_check)
+        xyz = image_check.replace("256", "0")
+        print(xyz)
         
 
 
