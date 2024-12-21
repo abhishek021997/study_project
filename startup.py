@@ -13,17 +13,11 @@ def docker_data(a):
                 print("there is no conetent")
                 os.system("docker-compose up -d")
             else:
-                print("Image already In your machine")
-
-        
-
+                print("Image already In your machine")  
+                
         image_check = os.system("docker images | grep -i study")
         image_create(image_check)
         
-
-
-
-
     elif a != 0:
         os.system("sh data_filter.sh")
         time.sleep(0.30)
