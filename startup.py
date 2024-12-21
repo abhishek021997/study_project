@@ -15,7 +15,7 @@ def docker_data(a):
         
 
         image_check = os.system("docker images | grep -i study")
-        xyz = image_check.replace("256", "0")
+        xyz = image_check.replace(" ", "0")
         print(xyz)
         
 
