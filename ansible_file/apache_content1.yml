@@ -2,7 +2,7 @@
   hosts: localhost
 
   vars:
-      file_name: study
+      file_name: study.conf
       path: 
         - /var/www/html/
       mail:
@@ -15,7 +15,7 @@
         - name: template
           template:
               src: file.j2
-              dist: "{{file_name}}".conf
+              dist: "{{file_name}}"
 
         - name: container_id
           command: cat < ../tmp_data.txt
@@ -24,7 +24,7 @@
         - name: copy content data in container
           docker_container_copy_into:
               container: "{{con_id}}"
-              path: "{{file_name}}".conf
+              path: "{{file_name}}"
               container_path: /etc/apache2/sites-available/000-default.conf
           
         - name: container reboot
