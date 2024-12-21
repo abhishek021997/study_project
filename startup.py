@@ -11,6 +11,7 @@ def docker_data(a):
         def image_create(image_check):
             if image_check == 256:
                 print("there is no conetent")
+                os.system("docker-compose up -d")
             else:
                 print("Image already In your machine")
 
