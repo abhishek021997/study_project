@@ -18,7 +18,7 @@
               dest: "{{file_name}}"
 
         - name: container_id
-          command: cat < ../tmp_data.txt
+          command: "cat ../tmp_data.txt"
           register: con_id
         
         - name: copy content data in container
