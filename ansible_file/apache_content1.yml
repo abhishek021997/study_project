@@ -27,7 +27,7 @@
                 
         - name: copy content data in container
           community.docker.docker_container_copy_into:
-              container: "{{con_id}}"
+              container: "{{con_id.stdout}}"
               path: "{{file_name}}"
               container_path: /etc/apache2/sites-available/000-default.conf
           
