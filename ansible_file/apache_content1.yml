@@ -9,6 +9,9 @@
         - abhishek1997sh@gmail.com
       server_name:
         - test.byteportfolio.in
+      command_run:
+        - docker ps | grep -i study_project | cut -b 1-4 > tmp_data.txt
+        - cat tmp_data.txt
 
 
   tasks:
@@ -18,8 +21,10 @@
               dest: "{{file_name}}"
 
         - name: container_id
-          command: "cat ../tmp_data.txt"
+          command: "{{item}}"
           register: con_id
+          with_items:
+              - "{{command_run}}"
 
         - name: content show
           debug:
