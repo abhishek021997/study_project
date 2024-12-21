@@ -20,7 +20,11 @@
         - name: container_id
           command: "cat ../tmp_data.txt"
           register: con_id
-        
+
+        - name: content show
+          debug:
+                msg: "{{con_id}}"
+                
         - name: copy content data in container
           community.docker.docker_container_copy_into:
               container: "{{con_id}}"
