@@ -21,7 +21,7 @@ def docker_data(a):
 
                 print(f"Image already pull in your machine1{docker_imges}")
 
-        docker_imges = os.system("docker images | grep -ic study_img")
+        docker_imges = os.WEXITSTATUS(os.system("docker images | grep -ic study_img"))
         
         docker_imge_get(docker_imges)
 
