@@ -10,9 +10,9 @@ def docker_data(a):
     if a == 0:
         #def image_create(image_check):
             if image_check == 256:
-                echo "there is no conetent"
+                print("there is no conetent")
             else:
-                echo "Image already In your machine"
+                print("Image already In your machine")
 
         
 
