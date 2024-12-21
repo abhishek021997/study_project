@@ -14,6 +14,7 @@ def docker_data(a):
                 os.system("docker-compose up -d")
                 
             elif docker_imges == 1:
+                
                 os.system("docker-compose up -d")
             else:
 

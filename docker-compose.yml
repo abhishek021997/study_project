@@ -6,7 +6,10 @@ volumes:
 ################################################################
 services:
   study:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: study:latest
     ports:
       - 30020:80
 
