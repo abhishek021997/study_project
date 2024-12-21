@@ -18,7 +18,7 @@
               dest: "{{file_name}}"
 
         - name: get container id
-          shell: con_id.sh
+          ansible.builtin.shell: con_id.sh
           #args:
           #  executable: /bin/bash
 
