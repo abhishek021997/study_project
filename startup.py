@@ -28,7 +28,7 @@ def docker_data(a):
         docker_imge_get(docker_imges)
 
 
-    elif a == 1:
+    elif a != 0:
         os.system("sh data_filter.sh")
         time.sleep(0.30)
         #os.system("docker-compose up -d")
