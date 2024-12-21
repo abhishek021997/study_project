@@ -14,6 +14,7 @@ def docker_data(a):
                 
             else:
                 print(f"this is value else {image_check}")
+                os.system("docker images | grep -ic study")
 
 
         image_check = os.WEXITSTATUS(os.system("docker images | grep -ic study"))
