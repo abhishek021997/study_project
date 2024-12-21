@@ -8,7 +8,7 @@ data collection and run
 """
 def docker_data(a):
     if a == 0:
-        print(f"{a}")
+        print(f"this is value {a}")
         
 
 
