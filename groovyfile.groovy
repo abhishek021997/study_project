@@ -14,7 +14,8 @@ pipeline {
         steps{
 
           sh "sh data_filter.sh"
-          sh "python3 startup.py"        
+          sh "python3 startup.py"  
+          sh "ansible-playbook apache_content1.yml"      
 
         }
 
