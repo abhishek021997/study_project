@@ -12,8 +12,9 @@ pipeline {
       }
       stage('build'){
         steps{
-          sh "python3 startup.py"
-          
+  
+
+          sh "python3 startup.py"        
         }
 
       }
