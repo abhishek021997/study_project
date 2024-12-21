@@ -17,8 +17,8 @@
               src: file.j2
               dest: "{{file_name}}"
 
-        - name: get container id
-          ansible.builtin.shell: con_id.sh
+        - name: get container id 
+          command: "sh con_id.sh"
           #args:
           #  executable: /bin/bash
 
