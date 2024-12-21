@@ -14,7 +14,7 @@ def docker_data(a):
                 os.system("docker-compose up -d")
                 
             elif docker_imges == 1:
-                print(f"Image alreay created and runing now{a}")
+                print(f"Image alreay created and runing now{a} {docker_imges}")
                 #os.system("docker-compose up -d")
 
             else:
