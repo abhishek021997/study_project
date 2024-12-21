@@ -10,7 +10,7 @@ def docker_data(a):
         print(docker_images)
     elif a == 1:
         b = os.system(f" {doc_img_output} | grep -i Exited")
-    else
+    else:
         print("Container not created")
 
 docker_images = os.system("docker ps -a | grep -i study")
