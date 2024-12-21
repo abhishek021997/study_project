@@ -10,7 +10,7 @@ def docker_data(a):
     if a == 0:
         
 
-        image_check = os.WEXITSTATUS(os.system("docker images | grep -i study"))
+        image_check = os.system("docker images | grep -i study")
         print(image_check)
         
 
