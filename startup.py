@@ -11,9 +11,9 @@ def docker_data(a):
         
         def docker_imge_get(docker_imges):
             if docker_imges == 0:
-                os.system("docker build -t .")
+                os.system("docker build .")
                 time.sleep(60)
-                os.system("docker-compose run .")
+                os.system("docker-composse run .")
                 
             elif docker_imges == 1:
                 os.system("docker-compose run .")
