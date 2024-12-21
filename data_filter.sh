@@ -5,7 +5,7 @@
 # Data filter
 
 
-docker ps | grep -i "study_project" | awk -F" " '{print $1}' | cut -b 1-4 > tmp_data
+docker ps | grep -i "study_project" | awk -F" " '{print $1}' | cut -b 1-4 > tmp_data.txt
 
 var1=$(cat tmp_data)
 
