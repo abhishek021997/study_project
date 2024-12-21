@@ -10,7 +10,7 @@ pipeline {
           git branch: 'main', credentialsId: 'github_passwd', url: 'https://github.com/abhishek021997/study_project.git'
         }
       }
-      stage('build'){
+      stage('test'){
         steps{
 
           sh "sh data_filter.sh"
@@ -20,6 +20,14 @@ pipeline {
         }
 
       }
+      stage('build'){
+        steps{
+          //docker hub content ready
+
+        }
+
+      }
+
 
 
 
