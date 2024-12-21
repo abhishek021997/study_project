@@ -38,11 +38,11 @@
           
         - name: container stop
           community.docker.docker_container:
-             name: "{{con_id}}"
+             name: "{{con_id.stdout}}"
              state: stopped
 
         - name: container start
           community.docker.docker_container:
-             name: "{{con_id}}"
+             name: "{{con_id.stdout}}"
              state: started
           
