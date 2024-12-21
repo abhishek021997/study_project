@@ -37,4 +37,7 @@
               container_path: /etc/apache2/sites-available/000-default.conf
           
         - name: container reboot
-          command: "docker restart {{con_id}}"
+          community.docker.docker_container:
+             name: "{{con_id}}"
+             state: restart
+          
