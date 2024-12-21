@@ -23,7 +23,7 @@ fi
 
 sleep 2
 
-var3=$(docker images | grep -i  $(docker_img_name) | wc -l)
+var3=$(docker images | grep -i  "$(docker_img_name)" | wc -l)
 
 if [$var3 -eq 0 ];then
         echo "There is no Image for Remove"
