@@ -10,11 +10,11 @@ docker_img_name="study" #provide your docker image name
 
 docker ps | grep -i "study_project" | awk -F" " '{print $1}' | cut -b 1-4 > tmp_data.txt
 
-var1=$(cat tmp_data)
+var1=$(cat tmp_data.txt)
 
 
 
-var2=$(cat tmp_data | wc -l)
+var2=$(cat tmp_data.txt | wc -l)
 if [ $var2 -eq 0 ];then
         echo "There is no process is running now"
 else
@@ -23,9 +23,9 @@ fi
 
 sleep 2
 
-var3=$(docker images | grep -i  "$(docker_img_name)" | wc -l)
+var3=$(docker images | grep -i  "$docker_img_name" | wc -l)
 
-if [$var3 -eq 0 ];then
+if [ $var3 -eq 0 ];then
         echo "There is no Image for Remove"
 else
         docker rmi study
