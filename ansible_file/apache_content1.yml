@@ -23,7 +23,7 @@
 
         - name: content show
           debug:
-                msg: "{{con_id}}"
+                msg: "{{con_id.stdout}}"
                 
         - name: copy content data in container
           community.docker.docker_container_copy_into:
