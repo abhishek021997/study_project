@@ -18,7 +18,7 @@ def docker_data(a):
             elif docker_imges == 1:
                 os.system("docker-compose up -d")
             else:
-                print("Image already pull in your machine")
+                print("Image already pull in your machine1")
 
         docker_imges = os.system("docker images | grep -ic study_img")
         
