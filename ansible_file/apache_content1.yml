@@ -21,7 +21,9 @@
               dest: "{{file_name}}"
 
         - name: container_id
-          command: "{{item}}"
+          command: 
+              cmd:
+                  - "{{item}}"
           register: con_id
           with_items:
               - "{{command_run}}"
